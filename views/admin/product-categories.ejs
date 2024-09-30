@@ -1,0 +1,19 @@
+<div class="container"></div>
+<a href="<%= baseUrl%>/admin/termek-kategoria">
+    <button>Létrehozás</button>
+</a>
+
+    <div class="grid">
+        <% categories.forEach(c=> {  %>
+            <div class="box">
+                <h4>Név</h4>
+                <%= c.categoryName%>
+
+
+                <a href="<%= BASE_URL%>/admin/termek-kategoria/<%=c.categoryID%>">
+                    <button>Megnyítás</button>
+                </a>
+            </div>
+        <% }) %>
+    </div>
+</div>
